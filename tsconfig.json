@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "src/gen-beside",
+    "outDir": "lib",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "sourceMap": false
+  },
+  "exclude": [
+    "node_modules/**",
+    "lib/**"
+  ]
+}
