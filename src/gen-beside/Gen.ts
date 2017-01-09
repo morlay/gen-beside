@@ -91,7 +91,10 @@ export const run = (opts: IGenOptions) => {
 
   const cwd = `${process.cwd()}${opts.baseUrl ? `/${opts.baseUrl}` : ""}`;
 
-  const dirs = glob.sync(`**/${opts.generatorBaseDir}`, { cwd });
+  const dirs = glob.sync(`**/${opts.generatorBaseDir}`, {
+    cwd,
+    ignore: "node_modules/**",
+  });
 
   const gen = Gen.initialGen();
 
