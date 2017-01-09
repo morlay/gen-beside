@@ -6,7 +6,7 @@
   version "0.9.34"
   resolved "http://registry.npm.taobao.org/@types/axios/download/@types/axios-0.9.34.tgz#6989cc08948eb0824d8661c5ab5775766ab552b5"
 
-"@types/chalk@0.4.31":
+"@types/chalk@0.4.x":
   version "0.4.31"
   resolved "http://registry.npm.taobao.org/@types/chalk/download/@types/chalk-0.4.31.tgz#a31d74241a6b1edbb973cf36d97a2896834a51f9"
 
@@ -42,7 +42,7 @@
   version "6.0.58"
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-6.0.58.tgz#7b3b7065f3cdf24e2349d35b68d2795cfa874553"
 
-"@types/proxyquire@1.3.27":
+"@types/proxyquire@1.3.x":
   version "1.3.27"
   resolved "http://registry.npm.taobao.org/@types/proxyquire/download/@types/proxyquire-1.3.27.tgz#9e36d4f3c29af1d408fcd21da4e2af57c577b066"
 
@@ -60,13 +60,13 @@
     "@types/node" "*"
     "@types/vinyl" "*"
 
-"@types/vinyl@*", "@types/vinyl@2.0.0":
+"@types/vinyl@*", "@types/vinyl@2.0.x":
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/@types/vinyl/download/@types/vinyl-2.0.0.tgz#fd213bf7f4136dde21fe1895500b12c186f8c268"
   dependencies:
     "@types/node" "*"
 
-"@types/yargs@6.5.0":
+"@types/yargs@6.5.x":
   version "6.5.0"
   resolved "http://registry.npm.taobao.org/@types/yargs/download/@types/yargs-6.5.0.tgz#308b17d5ca469f49ef76460baba793cb75657887"
 
@@ -1223,7 +1223,7 @@ deep-extend@~0.4.0:
   version "0.4.1"
   resolved "http://registry.npm.taobao.org/deep-extend/download/deep-extend-0.4.1.tgz#efe4113d08085f4e6f9687759810f807469e2253"
 
-del@2.2.2:
+del@2.2.x:
   version "2.2.2"
   resolved "http://registry.npm.taobao.org/del/download/del-2.2.2.tgz#c12c981d067846c84bcaf862cff930d907ffd1a8"
   dependencies:
@@ -2291,7 +2291,13 @@ observable-to-promise@^0.4.0:
     is-observable "^0.2.0"
     symbol-observable "^0.2.2"
 
-once@^1.3.0, once@~1.3.0, once@~1.3.3:
+once@^1.3.0:
+  version "1.4.0"
+  resolved "http://registry.npm.taobao.org/once/download/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
+  dependencies:
+    wrappy "1"
+
+once@~1.3.0, once@~1.3.3:
   version "1.3.3"
   resolved "http://registry.npm.taobao.org/once/download/once-1.3.3.tgz#b2e261557ce4c314ec8304f3fa82663e4297ca20"
   dependencies:
@@ -2532,7 +2538,7 @@ process-nextick-args@^1.0.6, process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "http://registry.npm.taobao.org/process-nextick-args/download/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
 
-proxyquire@1.7.10:
+proxyquire@1.7.x:
   version "1.7.10"
   resolved "http://registry.npm.taobao.org/proxyquire/download/proxyquire-1.7.10.tgz#75be0770a81188f4d08bd01dfc30b767365aa20d"
   dependencies:
@@ -3271,8 +3277,8 @@ wrappy@1:
   resolved "http://registry.npm.taobao.org/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
 write-file-atomic@^1.1.2, write-file-atomic@^1.1.4:
-  version "1.3.0"
-  resolved "http://registry.npm.taobao.org/write-file-atomic/download/write-file-atomic-1.3.0.tgz#d13e4831d52ee4e3d9a266ee1c9a1592f7fbbf3d"
+  version "1.3.1"
+  resolved "http://registry.npm.taobao.org/write-file-atomic/download/write-file-atomic-1.3.1.tgz#7d45ba32316328dd1ec7d90f60ebc0d845bb759a"
   dependencies:
     graceful-fs "^4.1.11"
     imurmurhash "^0.1.4"

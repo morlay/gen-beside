@@ -38,7 +38,7 @@ class Generator {
       })
       .on("data", (file: File) => {
         console.log(
-          chalk.green(`+ ${path.resolve(base, file.basename)}`),
+          chalk.green(`+ ${path.resolve(base, file.path)}`),
         );
       })
       .pipe(dest(".", { cwd: base }));
