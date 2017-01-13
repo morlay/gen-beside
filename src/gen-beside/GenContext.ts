@@ -102,11 +102,15 @@ export const join = (process: (thunks: any[]) => any = (a) => a) => {
   }
 
   function flush(cb: Function) {
-    const nextThunks = [].concat(process(thunks));
-    nextThunks.forEach((thunk) => {
-      this.push(thunk);
-    });
-    cb();
+    Promise
+      .resolve(process(thunks))
+      .then((newThunks) => {
+        const nextThunks = [].concat(newThunks);
+        nextThunks.forEach((thunk) => {
+          this.push(thunk);
+        });
+        cb();
+      });
   }
 
   return through2.obj(transform, flush);
