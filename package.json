@@ -1,6 +1,6 @@
 {
   "name": "gen-beside",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "WTFPL",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
