@@ -21,7 +21,6 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@types/axios": "0.9.x",
     "@types/chalk": "0.4.x",
     "@types/del": "2.2.31",
     "@types/lodash": "4.14.x",

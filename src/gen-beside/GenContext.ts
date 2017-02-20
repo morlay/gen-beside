@@ -1,4 +1,4 @@
-import * as axios from "axios";
+import axios from "axios";
 import * as vfs from "vinyl-fs";
 import * as File from "vinyl";
 import * as _ from "lodash";
@@ -12,6 +12,7 @@ import {
   Transform,
   Stream,
 } from "stream";
+import { AxiosRequestConfig } from "axios";
 
 export interface BufferFile extends File {
   contents: Buffer;
@@ -22,7 +23,7 @@ export interface BufferFile extends File {
   isSymbolic(): this is never;
 }
 
-export type IFetchConfig = string | Axios.AxiosXHRConfig<any>;
+export type IFetchConfig = string | AxiosRequestConfig;
 
 export const fromArray = (arr: any[]) => {
   const stream = new Stream();
